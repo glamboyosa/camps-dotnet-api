@@ -11,29 +11,6 @@ jobs:
           docker build -t aspnetapp -f Dockerfile .
       # deploy the image
       - run: |
-          docker login --username=$ogbemudiatimothy@gmail.com --password=$(5ea89c11-bf7b-4b0f-b1cb-a430592a8c45) registry.heroku.com
+          docker login --username=$ogbemudiatimothy@gmail.com --password=$5ea89c11-bf7b-4b0f-b1cb-a430592a8c45 registry.heroku.com
           docker tag campsApi registry.heroku.com/$dotnet-camps-api/web
-          docker push registry.heroku.com/$dotnet-camps-api/web                
-      - run:
-name: Setup Heroku
-command: |
-chmod +x .circleci/setup-heroku.sh
-.circleci/setup-heroku.sh
-- run:
-name: Deploy to Heroku
-command: |
-          heroku container:release web -a $dotnet-camps-api
-[setup-heroku.sh]
-#!/bin/bash
-set -eu
-git remote add heroku https://git.heroku.com/$dotnet-camps-api.git
-wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh 1 | sh
-cat > ~/.netrc << EOF
-machine api.heroku.com
-login $ogbemudiatimothy@gmail.com
-password $5ea89c11-bf7b-4b0f-b1cb-a430592a8c45
-machine git.heroku.com
-login $ogbemudiatimothy@gmail.com
-password $5ea89c11-bf7b-4b0f-b1cb-a430592a8c45
-EOF
-chmod 600 ~/.netrc
+          docker push registry.heroku.com/$dotnet-camps-api/web
