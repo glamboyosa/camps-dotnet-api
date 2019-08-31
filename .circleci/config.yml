@@ -1,0 +1,18 @@
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout 
+
+     # build image
+     - run: |         
+         docker info
+         docker build -t aspnetapp -f Dockerfile .
+     # deploy the image
+     - run: |         
+         docker login --username=$ogbemudiatimothy@gmail.com --password=$5ea89c11-bf7b-4b0f-b1cb-a430592a8c45 registry.heroku.com
+         docker tag campsApi registry.heroku.com/$dotnet-camps-api/web
+         docker push registry.heroku.com/$dotnet-camps-api/web                
+         curl https://cli-assets.heroku.com/install.sh | sh
+         heroku container:release web -a $dotnet-camps-api

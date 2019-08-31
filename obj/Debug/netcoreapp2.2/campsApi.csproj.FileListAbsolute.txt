@@ -1,0 +1,14 @@
+C:\Users\USER\source\repos\campsApi\campsApi\bin\Debug\netcoreapp2.2\campsApi.deps.json
+C:\Users\USER\source\repos\campsApi\campsApi\bin\Debug\netcoreapp2.2\campsApi.runtimeconfig.json
+C:\Users\USER\source\repos\campsApi\campsApi\bin\Debug\netcoreapp2.2\campsApi.runtimeconfig.dev.json
+C:\Users\USER\source\repos\campsApi\campsApi\bin\Debug\netcoreapp2.2\campsApi.dll
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.RazorAssemblyInfo.cache
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.RazorAssemblyInfo.cs
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.AssemblyInfo.cs
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.RazorTargetAssemblyInfo.cache
+C:\Users\USER\source\repos\campsApi\campsApi\bin\Debug\netcoreapp2.2\campsApi.pdb
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.dll
+C:\Users\USER\source\repos\campsApi\campsApi\obj\Debug\netcoreapp2.2\campsApi.pdb
